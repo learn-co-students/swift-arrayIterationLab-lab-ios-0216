@@ -15,6 +15,7 @@
  */
 // write your code here
 
+var ingredients = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -26,7 +27,7 @@
 // write your code here
 
 
-
+var numbers : [Int] = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -37,7 +38,9 @@
 // write your code here
 
 
-
+for number in numbers {
+    print(number)
+}
 
 
 
@@ -48,7 +51,9 @@
 // write your code here
 
 
-
+for ingredient in ingredients {
+    print("I need \(ingredient)")
+}
 
 
 
@@ -58,6 +63,16 @@
  */
 // write your code here
 
+//func printStuff(ingredientsList: String){
+//    
+//    print(ingredientsList)
+//    
+//}
+//
+//for ingredientOne in ingredients {
+//    
+//    printStuff(ingredientOne)
+//}
 
 
 
@@ -69,9 +84,18 @@
  */
 // write your code here
 
+var firstNames = ["mike","jon","deez"]
 
 
+func arrayOfNames(names: Array) {
+    
+    for name in names {
+        print("Good morning \(name)")
+    }
+    
+}
 
+arrayOfNames(firstNames)
 
 
 /*: question7
@@ -79,6 +103,21 @@
  */
 // write your code here
 
+var arrayOfInts = [ 40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49 ]
+
+func doThisThing(numbers: Array)-> Array {
+    
+    var newArray : Int
+    
+    for number in numbers {
+        if number > 50 {
+            newArray = number
+            print(newArray)
+        }
+    }
+}
+
+doThisThing(arrayOfInts)
 
 
 
